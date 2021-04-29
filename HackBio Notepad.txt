@@ -1,0 +1,164 @@
+HackBio Fellowship program
+Biotech level tech
++ cutting edge skills on biotech education (Are we going to learn all this skills).
+
++ Bioinformatics; Biology & Informatics 
+Genomics -- Functional genomics ; Genome data scientist.
+** Nucleotide sequence; 
+
+Drug development -- Fuse transcriptomics with drug development.
+
+Programming for biology -- 
+
+Junior bioinformatics role with at least, 2 years research experience in Academia or industry.
+
+15/March/2021
+I have a different time zone, and I have to go for normal classes... What are other options available?
+
+would you advice a basic
+
+R studio
+Biocmanager
+ape
+
+
+
+Since you said it will be graded\
+
+16/March/2021
+Molecular Genetics:
+Traits can be functional or structural depending on the protein being expressed from the DNA.
+Prokaryotes --- It is transcribed directly to mRNA.
+
+Eukaryotes -- Transcribed mRNA is usually not mature during copying pf the DNA, it has to undergo post transcriptional modification.
+
+Differential gene expression in Transcriptomics; is the involvement of histone markers... 
+
+Exons are coding region while introns are non-coding region -- they are primary transcript... 
+The introns are spliced off... to become a mature mRNA.
+
+The denatured nature of the protein is also referred to as primary structure.
+
+Translation is a cyclic, multistep process (what do you mean).
+
+What is the relationship between genes and traits?
+the answer '''' Genes--- Proteins---- Traits.
+
+GENOMICS
+Basic Local Alignment Search Tool (BLAST) 
+The search for similarity: Sequence ALignment.
+WE compare 2 sequences (pairwise alignment- PSA) 3 or more sequences (multiple sequence alignment - MSA (it uses ClusterW method).
+
+PSA: Local vs Global Search
+Local: attempts to align only the regions of similarity between the target and the query sequence (?). -- Smith Waterman Algorithm
+Global: attempts to align the entire target sequence with query sequence -- Needleman-Wunsch ALgorithm.
+
+Gap is the region of differences between the target sequence and query sequence.
+
+Smith waterman: is a non-negative scoring local alignment that aims to identify the most similar path between 2 sequences. You align the score
+Needleman-Wunsch is a negative scoring global alignment that aims to assign an alignment score to every possible input query.
+SCORING MATRIX (read more)
+Dynamic programming (read more)
+
+Applications & Case Studies
+1. comparative genomics and phylogenetics -- paternity testing
+2. Function Prediction
+3. Motif search
+4. Genome Assembly
+
+Tool Dev: How do we store genomic data
+1. FASTA
+2. FASTQ
+3. SAM (SAMTOOLS)
+4. BAM
+5. BED
+
+Functional Genomics: Transcriptomics and Epigenomics
+Transcriptome is the complete set of the RNA transcript. The Transcriptome data is achieved by RNA-Seq or microarray. RNA-seq is both quantitative and qualitative
+The popular transcript types include MRNA, Non-coding RNA-- Long non-coding RNA, Enhancer, Micro RNA, SiRNA, Small nucleolar RNA.
+Constructing the transcriptome: Methods
+* What is QC (Quality Control) -- The general data analysis pipeline
+
+Programming for life sciences
+The commonmark is the language you use in writing the readme repository???
+
+Are you saying linux is preferable than Windows?
+
+What is pseudobin (linux file system root directory)
+
+Is it okay to download the linux on a laptop that uses window... I mean having two users with differnt OS.
+
+I noticed you are using the bash for commands (is that the linux file system)
+
+Genomics
+Tools for sequence aligning -- MAFFT(fOR LARGE DATABASE), 
+
+BLAST AND 
+
+MEGA --Molecular Evolutionary Genetics Analysis (fOR GRAPHICAL ALIGNMENT), Circlus on R (not needed to download)
+
+ 
+use muscle (this is faster) or clustalW algorithms
+save as mega format
+phylogeny -- use upgma tree or open tree session
+
+
+You mentioned MAFFT for large database... How do you easily figure out the exact match? 
+
+Do we need to install mega?
+
+Genomics
+Proteomics and Protein Bioinformatics
+Prrotein doesn't function by itself... It usually associate with other protein.
+
+Basic Tools for interacting with functional genomics and proteomics.
+NCBI --
+MAFFT for visualization of sequencing analysis (For large data set) --
+nano is a text editor on linus os
+PDB/Protein databank -- to characterise protein and methods
+Clustal Omega/PSA/MSA
+MegaX or Mega7/Phylogeny
+
+Protein Sequences:
+EGFR --- Epidermal growth factor receptor -- It is a transmembrane in the protein
+Objective: is to collect egfr from 5 different species
+Fish --- Toad --- Lizards --- Birds --- Man
+We look at the conserved regions-- variable region -- If mutation occurred(Which region) -- Functional pockets of this protein.
+
+Functional genomics 
+Slack on Melyssa Minto
+
+Transcriptomics
+For genes submitted to Sequence Read archives (SRA) or genomics database
+
+create a table for stable 
+Use FastQ dump for  SRA
+Download WINSCP -- for windows (It is a virtual flashdrive)
+
+Homework -- Generate FastQreport
+
+Programming for life science
+Types of computing problems
+1. Tightly coupled-- results are sequential
+2. parallel -- results are not sequential; Bioinformaticians uses this
+
+
+Genomics
+
+QUAST -- IS FOR CHECKIN
+
+Install Ugene 
+TAsk...
+Consurf server
+Make one of the lowest taxa the reference sequence-- Use drosophilia -- 
+Count the Location of the differences?
+Use consurf server; Check if the differences occured in the variable region? if the differences occured in the Conserved region?
+Find out-- If the mutation
+
+NeuroTranscriptomics
+
+
+
+
+
+

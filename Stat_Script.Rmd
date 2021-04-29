@@ -1,0 +1,99 @@
+---
+title: "Statistics_Task"
+author: "Oluwakemisola"
+date: "4/26/2021"
+output: html_document
+---
+
+Question 1
+```{r}
+getwd()
+Data1 <- read.csv("lbw.csv", header = TRUE)
+mean(Data1$bwt)
+median(Data1$bwt)
+```
+Question 2
+Hypothesis testing is a formal procedure for investigating our ideas about the world using statistics. 
+There are 5 main steps in hypothesis testing:
+1. State your research hypothesis as a null (Ho) and alternate (Ha) hypothesis.
+2. Collect data in a way designed to test the hypothesis.
+3. Perform an appropriate statistical test.
+4. Decide whether the null hypothesis is supported or refuted.
+5. Present the findings in your results and discussion section.
+
+Question 3: Hypothesis testing
+```{r}
+```
+
+
+```{r}
+#1. Total births were to mothers that were smokers
+Data1$smoke
+sum(Data1$smoke==1)/nrow(Data1)
+
+names <- Data1%>%
+select(smoke)%>%
+filter(smoke==1)
+names
+length(names)
+dim(names)
+dim(Data1)
+prop.test(74, 189, 0.5)
+
+```
+```{r}
+#2. total births was of babies that were classified as low birth weight
+Data1$low
+sum(Data1$low==1)/nrow(Data1)
+
+names <- Data1%>%
+select(low) %>%
+filter(low==1)
+names
+length(names)
+dim(names)
+dim(Data1)
+prop.test(59, 189, 0.5)
+
+```
+3.	Make a contingency table of low birth weight vs. smoke
+```{r}
+low<-Data1$low
+smoke<-Data1$smoke
+table(smoke)
+table(low)
+table(low, smoke)
+
+```
+4.	Conduct a hypothesis test to answer the following question: 
+```{r}
+chisq.test(low, smoke)
+#smokers and non smokers give birth the same low-birth weight children... Reject Null hypothesis....
+```
+5.	To investigate the difference between the average weights of hypertensive mothers
+```{r}
+Data1
+#Null hypothesis: No difference in the average weight of hypertensive mothers and non hypertensive mothers.
+#Alternative: there is a difference between the average weight of hypertensive mothers and non hypertensive mothers.
+boxplot(Data1$bwt~low, data=Data1)
+aov(Data1$bwt~ht, data=Data1)
+x<-aov(Data1$bwt~ht, data=Data1)
+summary(x)
+#Reject Null hypothesis
+```
+
+
+question 3
+```{r}
+a<-c(32.2, 37.5, 41.7, 53.8, 50.2, 48.2, 46.3, 65.0, 44.8)
+a
+mean(a)
+median (a)
+#If the person 65.0 years of age retires and is replaced on the faculty with a person 46.5 years old. what is the new mean age? 
+b<-c(32.2, 37.5, 41.7, 53.8, 50.2, 48.2, 46.3, 46.5, 44.8)
+b
+mean(b)
+median(b)
+
+```
+
